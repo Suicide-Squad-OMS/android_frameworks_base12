@@ -85,7 +85,7 @@
 
     <color name="ripple_material_light">#40000000</color>
     <color name="ripple_material_dark">#40ffffff</color>
-	
+
     <!-- Navigation button ripple color -->
     <color name="navbutton_ripple_color">#FFFFFFFF</color>
 	
@@ -95,4 +95,14 @@
 	<!-- Nav bar tuner colors -->
     <color name="navbar_tuner_background_color">@android:color/white</color>
     <color name="navbar_tuner_text_color">@*android:color/material_deep_teal_500</color>
+
+    <!-- Task Manager -->
+    <color name="memory_usage_item_background">#0000</color>
+    <color name="task_manager_title_text">#ffffffff</color>
+    <color name="memory_usage_text_text">#ffffffff</color>
+    <color name="qs_panel_background">#0000</color>
+    <color name="task_item_view_background">#808080</color>
+    <color name="task_item_background">#0000</color>
+    <color name="task_item_text">#ffffffff</color>
+
 </resources>
