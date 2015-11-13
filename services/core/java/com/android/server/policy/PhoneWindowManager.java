@@ -2654,6 +2654,15 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             mTorchEnabled = (Settings.System.getIntForUser(resolver,
                     Settings.System.KEYGUARD_TOGGLE_TORCH, 0, UserHandle.USER_CURRENT) == 1);
 
+
+            if ((mRingHomeBehavior
+                        & CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER) != 0) {
+                    final TelecomManager telecomManager = getTelecommService();
+                    if (telecomManager != null && telecomManager.isRinging()) {
+                        telecomManager.acceptRingingCall();
+                    }
+                }
+
         }
         synchronized (mWindowManagerFuncs.getWindowManagerLock()) {
             WindowManagerPolicyControl.reloadFromSetting(mContext);
@@ -3891,15 +3900,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 if (canceled) {
                     Log.i(TAG, "Ignoring HOME; event canceled.");
                     return -1;
-                }
-
-                if ((mRingHomeBehavior
-                        & CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER) != 0) {
-                    final TelecomManager telecomManager = getTelecommService();
-                    if (telecomManager != null && telecomManager.isRinging()) {
-                        telecomManager.acceptRingingCall();
-                        return -1;
-                    }
                 }
 
                 // Delay handling home if a double-tap is possible.

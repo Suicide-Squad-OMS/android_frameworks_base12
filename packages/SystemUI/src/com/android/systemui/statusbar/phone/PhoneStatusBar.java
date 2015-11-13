@@ -221,6 +221,8 @@ import com.android.systemui.statusbar.policy.KeyguardUserSwitcher;
 import com.android.systemui.statusbar.policy.LocationControllerImpl;
 import com.android.systemui.statusbar.policy.NetworkController;
 import com.android.systemui.statusbar.policy.MinitBattery;
+import com.android.systemui.statusbar.policy.MinitBatteryController;
+import com.android.systemui.statusbar.policy.NetworkController;
 import com.android.systemui.statusbar.policy.NetworkControllerImpl;
 import com.android.systemui.statusbar.policy.NextAlarmController;
 import com.android.systemui.statusbar.policy.PreviewInflater;
@@ -416,6 +418,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     protected LockscreenWallpaper mLockscreenWallpaper;
     WeatherControllerImpl mWeatherController;
     SuControllerImpl mSuController;
+    MinitBatteryController mMinitBatteryController;
 
     int mNaturalBarHeight = -1;
 
@@ -1743,12 +1746,14 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
                 }
             });
         }
-
         showtaskmanager();
         mHeader.setTaskManagerEnabled(mShowTaskList);
         mNotificationPanel.setTaskManagerEnabled(mShowTaskManager);
         mShowTaskList = false;
 
+
+        mMinitBatteryController = new MinitBatteryController(mContext, mStatusBarView, mKeyguardStatusBar);
+        mPackageMonitor.addListener(mMinitBatteryController);
 
         // User info. Trigger first load.
         mKeyguardStatusBar.setUserInfoController(mUserInfoController);
@@ -5304,6 +5309,7 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
             mNavigationController.destroy();
         }
         mPackageMonitor.removeListener(mNavigationController);
+        mPackageMonitor.removeListener(mMinitBatteryController);
         mPackageMonitor.unregister();
 
         if (mHandlerThread != null) {
@@ -5312,6 +5318,7 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
         }
         mContext.unregisterReceiver(mBroadcastReceiver);
         mContext.unregisterReceiver(mDemoReceiver);
+        mContext.unregisterReceiver(mDUReceiver);
         mAssistManager.destroy();
 
         final SignalClusterView signalCluster =
