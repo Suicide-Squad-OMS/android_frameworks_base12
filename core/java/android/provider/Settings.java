@@ -4031,6 +4031,10 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
 
         /**
          * Color of toast message test
+
+        /**
+         * These are all public system settings
+         *
          * @hide
          */
         public static final String TOAST_TEXT_COLOR = "toast_text_color";
@@ -5523,6 +5527,13 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
         };
 
         /**
+		 * Boolean value whether to link ringtone and notification volume
+         *
+         * @hide
+         */
+        public static final String VOLUME_LINK_NOTIFICATION = "volume_link_notification";
+		
+		/**
          * These are all public system settings
          *
          * @hide
