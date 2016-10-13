@@ -3056,6 +3056,10 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
             mVisualizerView.setBitmap(((BitmapDrawable)artworkDrawable).getBitmap());
         }
 
+        if (mStatusBarWindowManager != null) {
+            mStatusBarWindowManager.setShowingMedia(hasArtwork);
+        }
+
         if ((hasArtwork || DEBUG_MEDIA_FAKE_ARTWORK)
                 && (mState != StatusBarState.SHADE || allowWhenShade)
                 && mFingerprintUnlockController.getMode()
@@ -3337,6 +3341,10 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
 
     public boolean isWakeUpComingFromTouch() {
         return mWakeUpComingFromTouch;
+    }
+
+    void setBlur(float b) {
+        mStatusBarWindowManager.setBlur(b);
     }
 
     public boolean isFalsingThresholdNeeded() {
@@ -4505,9 +4513,10 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
 
     private void addStatusBarWindow() {
         makeStatusBarView();
-        mStatusBarWindowManager = new StatusBarWindowManager(mContext);
+        mStatusBarWindowManager = new StatusBarWindowManager(mContext, mKeyguardMonitor);
         mRemoteInputController = new RemoteInputController(mStatusBarWindowManager,
                 mHeadsUpManager);
+        mStatusBarWindowManager.setShowingMedia(mKeyguardShowingMedia);
         mStatusBarWindowManager.add(mStatusBarWindow, getStatusBarHeight());
     }
 
@@ -4896,6 +4905,7 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
         updateRowStates();
         mScreenPinningRequest.onConfigurationChanged();
         mNetworkController.onConfigurationChanged();
+        mStatusBarWindowManager.onConfigurationChanged(newConfig);
     }
 
     @Override
@@ -5520,6 +5530,10 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
         if (mGestureWakeLock.isHeld()) {
             mGestureWakeLock.release();
         }
+    }
+
+    boolean isSecure() {
+        return mStatusBarKeyguardViewManager != null && mStatusBarKeyguardViewManager.isSecure();
     }
 
     public long calculateGoingToFullShadeDelay() {

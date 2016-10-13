@@ -26,12 +26,15 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-     <!-- Weather Provider -->
+    <!-- Weather Provider -->
     <uses-permission android:name="com.cyanogenmod.lockclock.permission.READ_WEATHER" />
     <protected-broadcast android:name="com.cyanogenmod.lockclock.action.FORCE_WEATHER_UPDATE" />
 
     <!-- NFC Tile -->
     <uses-permission android:name="android.permission.NFC" />
+
+    <!-- Blur surface -->
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
 
     <application>
 
