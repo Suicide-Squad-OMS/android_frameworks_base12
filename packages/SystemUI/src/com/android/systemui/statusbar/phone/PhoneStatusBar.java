@@ -5641,10 +5641,12 @@ mWeatherTempSize, mWeatherTempFontStyle, mWeatherTempColor);
     }
 
     public void onCameraHintStarted(String hint) {
+        mFalsingManager.onCameraHintStarted();
         mKeyguardIndicationController.showTransientIndication(hint);
     }
 
     public void onLeftHintStarted(String hint) {
+        mFalsingManager.onLeftAffordanceHintStarted();
         mKeyguardIndicationController.showTransientIndication(hint);
     }
 
