@@ -166,4 +166,7 @@
   <java-symbol type="color" name="notification_text_default_color" />
   <java-symbol type="color" name="sender_text_color" />
 
+  <!-- Dyanamic Navbar -->
+  <java-symbol type="color" name="input_method_navigation_guard_dyanamic" />
+
 </resources>
