@@ -43,6 +43,9 @@
   <!-- Button to soft restart the device, within the Restart Options dialog -->
   <string name="reboot_soft">Snelle herstart</string>
   <!-- Title of dialog to confirm restarting. -->
+  <!-- Button to soft reboot the device, within the Reboot Options dialog -->
+  <string name="reboot_soft">Snelle herstart</string>
+  <!-- Title of dialog to confirm rebooting. -->
   <string name="reboot_title">Herstarten</string>
   <!-- Restart Confirmation Dialog.  When the user chooses to restart the device, there will
          be a confirmation dialog.  This is the message. -->
