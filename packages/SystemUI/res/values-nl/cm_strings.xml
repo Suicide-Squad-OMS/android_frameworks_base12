@@ -36,6 +36,9 @@
   <!-- [CHAR LIMIT=NONE] Importance Tuner setting title -->
   <!-- Notification importance level title-->
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="importance_level_title">Urgentie: Niveau %1$d</string>
+  <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="notification_importance_very_low">Geen onderbreking van volledig scherm, geluid of trillen. Verbergen van vergrendelingsscherm.</string>
   <!-- Screen pinning dialog description (for devices without navbar) -->
   <string name="screen_pinning_description_no_navbar">Met scherm vastzetten wordt het beeldscherm vergrendeld op één weergave.\n\nBlijf de Terug-knop aanraken om het scherm los te maken.</string>
   <!-- Strings for lockscreen shortcut hints -->
