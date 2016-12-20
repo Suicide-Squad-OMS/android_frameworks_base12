@@ -31,6 +31,8 @@
   <string name="global_action_reboot">Herstarten</string>
   <!-- label for current user in phone options dialog -->
   <string name="global_action_current_user">Huidige</string>
+  <!-- status message in phone options dialog for screenshot action -->
+  <string name="global_actions_screenshot_status">Lang drukken voor gedeeltelijke schermafbeelding</string>
   <!-- Restart menu -->
   <!-- Button to restart the phone, within the Restart Options dialog -->
   <string name="reboot_reboot">Herstarten</string>
@@ -43,6 +45,9 @@
   <!-- Button to soft restart the device, within the Restart Options dialog -->
   <string name="reboot_soft">Snelle herstart</string>
   <!-- Title of dialog to confirm restarting. -->
+  <!-- Button to soft reboot the device, within the Reboot Options dialog -->
+  <string name="reboot_soft">Snelle herstart</string>
+  <!-- Title of dialog to confirm rebooting. -->
   <string name="reboot_title">Herstarten</string>
   <!-- Restart Confirmation Dialog.  When the user chooses to restart the device, there will
          be a confirmation dialog.  This is the message. -->

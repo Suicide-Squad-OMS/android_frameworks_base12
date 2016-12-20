@@ -35,7 +35,12 @@
   <string name="quick_settings_tile_flashlight_not_summary">Tik om uit te schakelen</string>
   <!-- [CHAR LIMIT=NONE] Importance Tuner setting title -->
   <!-- Notification importance level title-->
+  <string name="importance_level_title">Urgentieniveau: Niveau %1$d</string>
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="importance_level_title">Urgentie: Niveau %1$d</string>
+  <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+  <string name="notification_importance_very_low">Geen onderbreking van volledig scherm, geluid of trillen. Verbergen van vergrendelingsscherm.</string>
+  <string name="notification_importance_very_low">Geen onderbreking van volledig scherm, geluid en trillen. Verbergen van vergrendelingsscherm.</string>
   <!-- Screen pinning dialog description (for devices without navbar) -->
   <string name="screen_pinning_description_no_navbar">Met scherm vastzetten wordt het beeldscherm vergrendeld op één weergave.\n\nBlijf de Terug-knop aanraken om het scherm los te maken.</string>
   <!-- Strings for lockscreen shortcut hints -->
@@ -50,9 +55,20 @@
   <string name="play_queue_extension">Wachtrij weergeven</string>
   <!-- Weather string format in keyguard -->
   <string name="keyguard_status_view_weather_format"><xliff:g id="temp">%1$s</xliff:g> <xliff:g id="condition">%2$s</xliff:g></string>
+  <!-- Dialog title for navigation bar button selection -->
+  <string name="navbar_dialog_title">Kies de toe te wijzen functie</string>
+  <string name="navbar_home_button">Thuisknop</string>
+  <string name="navbar_recent_button">Recente apps-knop</string>
+  <string name="navbar_search_button">Zoekknop</string>
+  <string name="navbar_back_button">Terugknop</string>
+  <string name="navbar_empty_button">Lege knop</string>
+  <string name="navbar_menu_conditional_button">Menuknop (altijd verbergen)</string>
+  <string name="navbar_menu_always_button">Menuknop (altijd tonen)</string>
+  <string name="navbar_menu_big_button">Menuknop</string>
   <string name="accessibility_dpad_left">Cursor links</string>
   <string name="accessibility_dpad_right">Cursor rechts</string>
   <!-- NavBar Tuner -->
+  <string name="menu_ime_always_show">Kiezer invoermethode (altijd weergeven)</string>
   <string name="search">Zoeken</string>
   <!-- Wi-Fi hotspot label when enabled -->
   <plurals name="wifi_hotspot_connected_clients_label">
