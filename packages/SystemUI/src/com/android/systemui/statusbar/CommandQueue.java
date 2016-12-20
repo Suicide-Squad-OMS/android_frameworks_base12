@@ -81,8 +81,7 @@ public class CommandQueue extends IStatusBar.Stub {
     private static final int MSG_TOGGLE_KILL_APP               = 35 << MSG_SHIFT;
     private static final int MSG_TOGGLE_SCREENSHOT             = 36 << MSG_SHIFT;
     private static final int MSG_HANDLE_SYSNAV_KEY             = 37 << MSG_SHIFT;
-    private static final int MSG_HANDLE_SYSNAV_KEY             = 34 << MSG_SHIFT;
-    private static final int MSG_SET_AUTOROTATE_STATUS         = 35 << MSG_SHIFT;
+    private static final int MSG_SET_AUTOROTATE_STATUS         = 38 << MSG_SHIFT;
 
     public static final int FLAG_EXCLUDE_NONE = 0;
     public static final int FLAG_EXCLUDE_SEARCH_PANEL = 1 << 0;
