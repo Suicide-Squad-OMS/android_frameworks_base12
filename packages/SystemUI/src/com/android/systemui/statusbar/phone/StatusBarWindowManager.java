@@ -563,7 +563,8 @@ public class StatusBarWindowManager implements RemoteInputController.Callback,
             mKeyguardScreenRotation = shouldEnableKeyguardScreenRotation();
             // update the state
             apply(mCurrentState);
-
+		}	
+		
     @Override
     public void onTuningChanged(String key, String newValue) {
         switch (key) {
