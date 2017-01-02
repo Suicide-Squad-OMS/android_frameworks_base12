@@ -649,7 +649,6 @@ public class AudioService extends IAudioService.Stub {
     };
 
     private boolean mVisualizerLocked;
-    private boolean mLinkNotificationWithVolume;
 
     ///////////////////////////////////////////////////////////////////////////
     // Construction
@@ -5145,7 +5144,7 @@ public class AudioService extends IAudioService.Stub {
                 updateMasterMono(mContentResolver);
                 updateEncodedSurroundOutput();
 
-                boolean linkNotificationWithVolume = Settings.Secure.getInt(mContentResolver,
+               boolean linkNotificationWithVolume = Settings.Secure.getInt(mContentResolver,
                         Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
                 if (linkNotificationWithVolume != mLinkNotificationWithVolume) {
                     mLinkNotificationWithVolume = linkNotificationWithVolume;
@@ -5158,6 +5157,7 @@ public class AudioService extends IAudioService.Stub {
                 } else {
                     mStreamVolumeAlias[AudioSystem.STREAM_NOTIFICATION] = AudioSystem.STREAM_NOTIFICATION;
                 }
+
             }
         }
 
