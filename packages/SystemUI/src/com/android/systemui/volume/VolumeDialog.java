@@ -783,12 +783,11 @@ public class VolumeDialog implements TunerService.Tunable {
             row.requestedLevel = -1;
         }
         final boolean isRingStream = row.stream == AudioManager.STREAM_RING;
+        final boolean isNotificationStream = row.stream == AudioManager.STREAM_NOTIFICATION;
         final boolean isRingOrNotificationStream = isRingStream || isNotificationStream;
         final boolean isSystemStream = row.stream == AudioManager.STREAM_SYSTEM;
         final boolean isAlarmStream = row.stream == AudioManager.STREAM_ALARM;
         final boolean isMusicStream = row.stream == AudioManager.STREAM_MUSIC;
-        final boolean isNotificationStream = row.stream == AudioManager.STREAM_NOTIFICATION;
-        final boolean isVibrate = mState.ringerModeInternal == AudioManager.RINGER_MODE_VIBRATE;      
         final boolean isRingVibrate = isRingOrNotificationStream
                 && mState.ringerModeInternal == AudioManager.RINGER_MODE_VIBRATE;
         final boolean isRingSilent = isRingStream
