@@ -5157,7 +5157,7 @@ public class AudioService extends IAudioService.Stub {
                 } else {
                     mStreamVolumeAlias[AudioSystem.STREAM_NOTIFICATION] = AudioSystem.STREAM_NOTIFICATION;
                 }
-
+                }
             }
         }
 
