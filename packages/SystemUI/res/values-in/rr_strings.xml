@@ -123,6 +123,7 @@
   <string name="accessibility_quick_settings_pulse_on">Pulse aktif</string>
   <string name="accessibility_quick_settings_pulse_changed_off">Pulse telah di non aktifkan</string>
   <string name="accessibility_quick_settings_pulse_changed_on">Pulse telah di aktifkan</string>
+  <string name="quick_settings_pulse_label">Navigationbar Visualizer</string>
   <string name="quick_settings_pie">Pie</string>
   <string name="quick_settings_ambient_display_label">Ambient Display</string>
   <string name="accessibility_quick_settings_ambient_display_off">Ambient display nonaktif.</string>
