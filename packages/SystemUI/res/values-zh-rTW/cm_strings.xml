@@ -31,7 +31,7 @@
   <!-- Content description of the superuser tile -->
   <!-- Notification which notifies user flashlight is enabled -->
   <string name="quick_settings_tile_flashlight_not_title">手電筒已經開啟</string>
-  <string name="quick_settings_tile_flashlight_not_summary">點擊關閉</string>
+  <string name="quick_settings_tile_flashlight_not_summary">輕觸即可關閉</string>
   <!-- [CHAR LIMIT=NONE] Importance Tuner setting title -->
   <!-- Notification importance level title-->
   <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
@@ -40,9 +40,14 @@
   <string name="left_shortcut_hint">向右滑動即可%1$s</string>
   <string name="right_shortcut_hint">向左滑動即可%1$s</string>
   <string name="lockscreen_message">輕觸左側或右側的圖示以設定鎖定畫面捷徑</string>
+  <string name="screen_pinning_description_no_navbar">此功能會固定螢幕顯示直到您取消固定。觸控並長按 [返回] 鍵即可解除固定。</string>
+  <!-- Strings for lockscreen shortcut hints -->
+  <string name="left_shortcut_hint">向右滑動即可%1$s</string>
+  <string name="right_shortcut_hint">向左滑動即可%1$s</string>
+  <string name="lockscreen_message">輕觸左側或右側的圖示即可設定鎖定畫面捷徑</string>
   <string name="lockscreen_default_target">預設</string>
-  <string name="select_application">選取應用程式</string>
-  <string name="lockscreen_choose_action_title">選取操作</string>
+  <string name="select_application">選擇應用程式</string>
+  <string name="lockscreen_choose_action_title">選擇動作</string>
   <string name="lockscreen_none_target">無</string>
   <!-- Play queue -->
   <!-- Weather string format in keyguard -->
@@ -56,4 +61,27 @@
   <!-- Path data for portrait battery -->
   <!-- Path data for landscape battery -->
   <!-- Path data for circle battery -->
+  <!-- Volume stream titles - should match the string-array in AOSP -->
+  <string-array name="volume_stream_titles_lineage">
+    <item>通話</item>
+    <!-- STREAM_VOICE_CALL -->
+    <item>系統</item>
+    <!-- STREAM_SYSTEM -->
+    <item>鈴聲</item>
+    <!-- STREAM_RING -->
+    <item>媒體</item>
+    <!-- STREAM_MUSIC -->
+    <item>鬧鐘</item>
+    <!-- STREAM_ALARM -->
+    <item>通知</item>
+    <!-- STREAM_NOTIFICATION -->
+    <item>藍牙</item>
+    <!-- STREAM_BLUETOOTH_SCO -->
+    <item></item>
+    <!-- STREAM_SYSTEM_ENFORCED -->
+    <item></item>
+    <!-- STREAM_DTMF -->
+    <item></item>
+    <!-- STREAM_TTS -->
+  </string-array>
 </resources>
