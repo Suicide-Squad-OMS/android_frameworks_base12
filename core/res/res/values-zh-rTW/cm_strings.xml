@@ -93,11 +93,6 @@
   <string name="app_ops_send_mms">傳送多媒體訊息</string>
   <string name="app_ops_send_sms">傳送簡訊訊息</string>
   <string name="app_ops_start_at_bootup">開機時啟動</string>
-  <string name="app_ops_toast_window">顯示彈出信息</string>
-  <string name="app_ops_toggle_bluetooth">開關藍牙</string>
-  <string name="app_ops_toggle_mobile_data">切換數據用量</string>
-  <string name="app_ops_toggle_nfc">開關 NFC</string>
-  <string name="app_ops_toggle_wifi">切換 Wi-Fi</string>
   <string name="app_ops_toast_window">顯示提示訊息</string>
   <string name="app_ops_toggle_bluetooth">切換至藍牙</string>
   <string name="app_ops_toggle_mobile_data">切換至行動數據</string>
@@ -118,9 +113,6 @@
   <string name="app_ops_use_fingerprint">使用指紋</string>
   <string name="app_ops_add_voicemail">新增語音信箱</string>
   <string name="app_ops_read_phone_state">存取電話狀態</string>
-  <string name="app_ops_change_wallpaper">變更桌布</string>
-  <string name="app_ops_assist_structure">使用協助工具</string>
-  <string name="app_ops_assist_screenshot">擷取螢幕畫面</string>
   <string name="app_ops_scan_wifi">掃描 Wi-Fi 網路</string>
   <string name="app_ops_change_wallpaper">變更桌布</string>
   <string name="app_ops_assist_structure">使用協助工具</string>
