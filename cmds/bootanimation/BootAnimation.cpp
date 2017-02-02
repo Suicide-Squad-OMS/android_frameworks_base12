@@ -318,14 +318,13 @@ status_t BootAnimation::initTexture(SkBitmap *bitmap)
 
 
 // Get bootup Animation File
-// Parameter: ImageID: IMG_OEM IMG_SYS IMG_ENC IMG_THM
+// Parameter: ImageID: IMG_OEM IMG_SYS IMG_ENC
 // Return Value : File path
 const char *BootAnimation::getAnimationFileName(ImageID image)
 {
-    const char *fileName[4] = { OEM_BOOTANIMATION_FILE,
+    const char *fileName[3] = { OEM_BOOTANIMATION_FILE,
             SYSTEM_BOOTANIMATION_FILE,
-            SYSTEM_ENCRYPTED_BOOTANIMATION_FILE,
-            THEME_BOOTANIMATION_FILE };
+            SYSTEM_ENCRYPTED_BOOTANIMATION_FILE };
 
     // Load animations of Carrier through regionalization environment
     if (Environment::isSupported()) {
@@ -410,8 +409,8 @@ status_t BootAnimation::readyToRun() {
     if (encryptedAnimation && (access(getAnimationFileName(IMG_ENC), R_OK) == 0)) {
         mZipFileName = getAnimationFileName(IMG_ENC);
     }
-    else if (access(getAnimationFileName(IMG_THM), R_OK) == 0) {
-        mZipFileName = getAnimationFileName(IMG_THM);
+    else if (access(THEME_BOOTANIMATION_FILE, R_OK) == 0) {
+        mZipFileName = THEME_BOOTANIMATION_FILE;
     }
     else if (access(getAnimationFileName(IMG_OEM), R_OK) == 0) {
         mZipFileName = getAnimationFileName(IMG_OEM);
@@ -426,8 +425,6 @@ status_t BootAnimation::readyToRun() {
     FILE* fd;
     if (encryptedAnimation && access(getAnimationFileName(IMG_ENC), R_OK) == 0)
         fd = fopen(getAnimationFileName(IMG_ENC), "r");
-    else if (access(getAnimationFileName(IMG_THM), R_OK) == 0)
-        fd = fopen(getAnimationFileName(IMG_THM), "r");
     else if (access(getAnimationFileName(IMG_OEM), R_OK) == 0)
         fd = fopen(getAnimationFileName(IMG_OEM), "r");
     else if (access(getAnimationFileName(IMG_SYS), R_OK) == 0)
