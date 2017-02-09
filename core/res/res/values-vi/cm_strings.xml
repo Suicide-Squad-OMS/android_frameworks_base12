@@ -29,11 +29,8 @@
   <string name="global_action_reboot">Khởi động lại</string>
   <!-- label for current user in phone options dialog -->
   <string name="global_action_current_user">Hiện tại</string>
-<<<<<<< HEAD
-=======
   <!-- status message in phone options dialog for screenshot action -->
   <string name="global_actions_screenshot_status">Nhấn giữ để chụp ảnh màn hình một phần</string>
->>>>>>> 04d32e6052f... Automatic translation import
   <!-- Restart menu -->
   <!-- Button to restart the phone, within the Restart Options dialog -->
   <string name="reboot_reboot">Khởi động lại</string>
