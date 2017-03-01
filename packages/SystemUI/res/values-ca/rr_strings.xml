@@ -38,4 +38,14 @@
   <!-- Screenshot Crop & Share -->
   <!-- Path data for Solid battery -->
   <!-- Task Manager -->
+  <string name="task_manager_title">Administrador de tasques</string>
+  <string name="message_switch_fail">No es pot canviar a aquesta tasca, perquè no té interfície gràfica.</string>
+  <string name="tasklist_killall">Mata-ho tot</string>
+  <string name="tasklist_memory_usage">"Memòria lliure/total: [<xliff:g id="number">%s</xliff:g>] / [<xliff:g id="name">%s</xliff:g>]"</string>
+  <string name="message_keep_one_launcher">Has de mantenir almenys una activitat a la pantalla d\'inici!</string>
+  <string name="tm_clear_task">NETEJAR</string>
+  <!-- Slim recents app sidebar queue app toast -->
+  <!-- Sim recents on keyguard -->
+  <!-- Kill button in notification guts -->
+  <!-- OmniJAWS -->
 </resources>

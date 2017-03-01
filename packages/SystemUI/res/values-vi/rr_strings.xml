@@ -147,4 +147,14 @@
   <string name="recents_free_ram">RAM trống: %1$d MB</string>
   <!-- Path data for Solid battery -->
   <!-- Task Manager -->
+  <string name="task_manager_title">Trình quản lý tác vụ</string>
+  <string name="message_switch_fail">Không thể chuyển sang tác vụ này, bởi vì nó không có giao diện.</string>
+  <string name="tasklist_killall">Đóng tất cả</string>
+  <string name="tasklist_memory_usage">"Trống • Tổng bộ nhớ : <xliff:g id="number">%s</xliff:g> • <xliff:g id="name">%s</xliff:g>"</string>
+  <string name="message_keep_one_launcher">Nên giữ ít nhất một hoạt động trang chủ!</string>
+  <string name="tm_clear_task">XÓA</string>
+  <!-- Slim recents app sidebar queue app toast -->
+  <!-- Sim recents on keyguard -->
+  <!-- Kill button in notification guts -->
+  <!-- OmniJAWS -->
 </resources>

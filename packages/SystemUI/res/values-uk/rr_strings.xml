@@ -147,4 +147,14 @@
   <string name="recents_free_ram">Вільно ОЗУ: %1$d Мб</string>
   <!-- Path data for Solid battery -->
   <!-- Task Manager -->
+  <string name="task_manager_title">Диспетчер завдань</string>
+  <string name="message_switch_fail">Неможливо перемкнутися на цю задачу, так як у неї немає інтерфейсу.</string>
+  <string name="tasklist_killall">Закрити всі</string>
+  <string name="tasklist_memory_usage">"Вільно • Загалом : <xliff:g id="number">%s</xliff:g> • <xliff:g id="name">%s</xliff:g>"</string>
+  <string name="message_keep_one_launcher">Повинен бути як мінімум один домашній екран!</string>
+  <string name="tm_clear_task">Очистити</string>
+  <!-- Slim recents app sidebar queue app toast -->
+  <!-- Sim recents on keyguard -->
+  <!-- Kill button in notification guts -->
+  <!-- OmniJAWS -->
 </resources>

@@ -139,4 +139,13 @@
   <string name="recents_free_ram">Слободни РАМ: %1$d MB</string>
   <!-- Path data for Solid battery -->
   <!-- Task Manager -->
+  <string name="task_manager_title">Управљач задацима</string>
+  <string name="message_switch_fail">Немогуће је одабрати овај задатак зато што не поседује интерфејс.</string>
+  <string name="tasklist_killall">Прекини све</string>
+  <string name="tasklist_memory_usage">"Слободно • Укупна меморија : <xliff:g id="number">%s</xliff:g> • <xliff:g id="name">%s</xliff:g>"</string>
+  <string name="tm_clear_task">ОБРИШИ</string>
+  <!-- Slim recents app sidebar queue app toast -->
+  <!-- Sim recents on keyguard -->
+  <!-- Kill button in notification guts -->
+  <!-- OmniJAWS -->
 </resources>
