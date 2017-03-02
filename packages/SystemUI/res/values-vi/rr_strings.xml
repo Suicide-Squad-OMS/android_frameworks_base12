@@ -157,4 +157,13 @@
   <!-- Sim recents on keyguard -->
   <!-- Kill button in notification guts -->
   <!-- OmniJAWS -->
+<<<<<<< HEAD
+=======
+  <string name="omnijaws_service_error">Lỗi</string>
+  <string name="omnijaws_service_unkown">Không có dữ liệu thời tiết</string>
+  <string name="omnijaws_detail_header">Thời tiết</string>
+  <string name="omnijaws_label_default">Thời tiết</string>
+  <string name="omnijaws_current_text">Hiện tại</string>
+  <string name="omnijaws_package_not_available">OmniJaws không có sẵn</string>
+>>>>>>> 7fd882c8c0c... Automatic translation import
 </resources>
